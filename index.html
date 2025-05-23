@@ -38,16 +38,33 @@
       padding: 20px;
       border-radius: 10px;
       display: inline-block;
+      max-width: 300px;
     }
-    .ltr {
+    .phone-link {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 10px 0;
+      text-decoration: none;
+      color: #0066cc;
+      background: #ffffff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid #b3d4fc;
       direction: ltr;
-      unicode-bidi: embed;
-      display: inline-block;
+    }
+    .phone-link:hover {
+      background-color: #d6ebff;
+    }
+    .phone-icon {
+      margin-left: 10px;
+      font-size: 20px;
     }
   </style>
 </head>
 <body>
   <h1>AAF Wood</h1>
+
   <div class="intro">
     <p><strong>آشپزخانه‌ای رویایی، کابینتی بی‌نظیر.</strong></p>
     <p>
@@ -69,8 +86,12 @@
 
   <div class="contact">
     <p><strong>شماره تماس‌ها:</strong></p>
-    <p class="ltr">0930 719 9400</p>
-    <p class="ltr">0916 304 0199</p>
+    <a class="phone-link" href="tel:09307199400" dir="ltr">
+      <span class="phone-icon">📞</span>0930 719 9400
+    </a>
+    <a class="phone-link" href="tel:09163040199" dir="ltr">
+      <span class="phone-icon">📞</span>0916 304 0199
+    </a>
   </div>
 </body>
 </html>
